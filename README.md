@@ -1,63 +1,31 @@
-﻿# D148：[BLE标签](https://github.com/OS-Q/D148) 
-
+﻿# [BLE组网设备](https://github.com/OS-Q/D141)
 [![sites](OS-Q/OS-Q.png)](http://www.OS-Q.com)
-
-#### 归属交互连接：[W22](https://github.com/OS-Q/W22)
-
+#### 归属无线组网：[W21](https://github.com/OS-Q/W21)
 #### 关于系统架构：[OS-Q](https://github.com/OS-Q/OS-Q)
+Edge-Q -> 体系 Q[1,4] -> 节点 M[1,12] -> 平台 W[1,52] -> 设备 D[1,365]
+### [设备描述](https://github.com/OS-Q/D141/wiki) 
 
-## [平台描述](https://github.com/OS-Q/D148/wiki) 
-
-BLE标签，用于无线广播数据
-
-
-### [参考文件](docs/)
-
-硬件资料
-
-### [工程文件](project/)
-
-keil工程文件
+BLE组网设备
 
 
----
+- [NRF52](https://github.com/sochub/NRF52)
 
-- 边缘设备命名规则：体系 Q:[1,4] -> 节点 M:[1,12] -> 平台 W:[1,52] -> 设备 D:[1,365]
+### [设备资源](https://github.com/OS-Q/D141) 
 
-- naming patterns：system Q[1,4] -> node M[1,12] -> platform W[1,52] -> device D[1,365]
+- [资源](src/)
+- [文档](docs/)
+- [工程](project/)
 
-## [同级设备](https://github.com/OS-Q/W22/wiki) 
+### [设备相关](https://github.com/OS-Q/D141) 
 
-#### -> D148：[BLE标签](https://github.com/OS-Q/D148)
+* W21：[无线组网](https://github.com/OS-Q/W21)
+    * [D141：BLE组网](https://github.com/OS-Q/D141)
+    * D142：[ZigBee](https://github.com/OS-Q/D142)
+    * D143：[Thread](https://github.com/OS-Q/D143)
+    * D144：[ANT](https://github.com/OS-Q/D144)
+    * D145：[LoRa](https://github.com/OS-Q/D145)
+    * D146：[CLAA](https://github.com/OS-Q/D146)
+    * D147：[NULL](https://github.com/OS-Q/D147)
 
-用于向手机端客户发布数据和引导
-
-#### D149：[NULL](https://github.com/OS-Q/D149)
-
-
-
-#### D150：[NULL](https://github.com/OS-Q/D150)
-
-
-
-#### D151：[NULL](https://github.com/OS-Q/D151)
-
-
-
-#### D152：[NULL](https://github.com/OS-Q/D152)
-
-
-
-#### D153：[NULL](https://github.com/OS-Q/D153)
-
-
-
-#### D154：[NULL](https://github.com/OS-Q/D154)
-
-
----
-
-####  © qitas@qitas.cn
-###  [OS-Q redefined Operation System](http://www.OS-Q.com)
-####  @ 2018-12-28
-
+### [OS-Q : Operation System for edge devices](http://www.OS-Q.com/Edge/D141)
+####  2019-5-3 
