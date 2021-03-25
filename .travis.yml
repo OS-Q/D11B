@@ -1,0 +1,23 @@
+language: python
+
+cache:
+  directories:
+    - "~/.platformio"
+
+install:
+  - pip install -U platformio
+  - platformio update
+
+script:
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/Argument_Complex/Argument_Complex.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/Argument_None/Argument_None.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/Argument_Simple/Argument_Simple.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/ISR_16_Timers_Array_Complex/ISR_16_Timers_Array_Complex.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/ISR_RPM_Measure/ISR_RPM_Measure.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/ISR_Timer_Complex/ISR_Timer_Complex.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/ISR_Timer_Switches/ISR_Timer_Switches.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/ISR_Timers_Array_Simple/ISR_Timers_Array_Simple.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/RPM_Measure/RPM_Measure.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/SwitchDebounce/SwitchDebounce.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/TimerDuration/TimerDuration.ino
+  - platformio ci --lib="." --board=uno --board=leonardo --board=megaatmega2560 examples/TimerInterruptTest/TimerInterruptTest.ino
